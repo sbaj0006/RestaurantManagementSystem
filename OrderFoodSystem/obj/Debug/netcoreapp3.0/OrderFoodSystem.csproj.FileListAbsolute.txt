@@ -478,3 +478,14 @@ C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp
 C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\SubCategory\Edit.cshtml.g.cs
 C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\SubCategory\Details.cshtml.g.cs
 C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\SubCategory\Delete.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Index.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Create.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Edit.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Details.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\MenuItem\Delete.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Index.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Create.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Edit.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Details.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Delete.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ThumbnailAreaPartial.cshtml.g.cs

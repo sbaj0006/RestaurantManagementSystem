@@ -4,8 +4,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using OrderFoodSystem.Data;
 using OrderFoodSystem.Models;
+using OrderFoodSystem.Models.ViewModels;
 
 namespace OrderFoodSystem.Controllers
 {
@@ -13,15 +16,23 @@ namespace OrderFoodSystem.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
         {
             _logger = logger;
+            _db = db;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            IndexViewModel IndexVM = new IndexViewModel()
+            {
+                MenuItem = await _db.MenuItem.Include(m => m.Category).Include(m => m.SubCategory).ToListAsync(),
+                Category = await _db.Category.ToListAsync(),
+                Coupon = await _db.Coupon.Where(c => c.isActive == true).ToListAsync()
+            };
+            return View(IndexVM);
         }
 
         public IActionResult Privacy()
