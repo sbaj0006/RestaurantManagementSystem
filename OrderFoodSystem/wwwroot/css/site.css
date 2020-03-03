@@ -106,3 +106,8 @@ body {
     background-color: #545b62;
     color: #fff;
 }
+
+.form-control:disabled, .form-control[readonly] {
+    background-color: white;
+    opacity: 1;
+}

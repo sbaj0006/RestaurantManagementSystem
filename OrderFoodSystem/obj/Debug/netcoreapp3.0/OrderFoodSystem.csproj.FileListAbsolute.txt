@@ -489,3 +489,5 @@ C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp
 C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Details.cshtml.g.cs
 C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\Coupon\Delete.cshtml.g.cs
 C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_ThumbnailAreaPartial.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\smart\source\repos\OrderFoodSystem\OrderFoodSystem\obj\Debug\netcoreapp3.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
