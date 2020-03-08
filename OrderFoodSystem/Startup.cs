@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OrderFoodSystem.Services;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using OrderFoodSystem.Utility;
+using Stripe;
 
 namespace OrderFoodSystem
 {
@@ -44,6 +46,21 @@ namespace OrderFoodSystem
                 options.LogoutPath = $"/Identity/Account/Logout";
                 options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
             });
+
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+
+            //services.AddAuthentication().AddFacebook(facebookOptions =>
+            //{
+            //    facebookOptions.AppId = "1073168699722214";
+            //    facebookOptions.AppSecret = "c410b33ed444cc4cacc14893934b2d80";
+            //});
+            services.AddSession(options =>
+            {
+                options.Cookie.IsEssential = true;
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,9 +82,11 @@ namespace OrderFoodSystem
 
             app.UseRouting();
 
+            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
+
             app.UseAuthentication();
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
